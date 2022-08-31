@@ -84,7 +84,7 @@
 
 @media(max-width: 883px) {
   .welcome {
-    padding: 12px 0 88px 0;
+    padding: 12px 0 138px 0;
   }
 
   .welcome-bg {
@@ -137,7 +137,13 @@
     width: auto;
     position: absolute;
     right: 42px;
-    bottom: -170px;
+    bottom: -109px;
     z-index: -1;
+  }
+}
+
+@media(max-width: 320px) {
+  .welcome__title {
+    font-size: 33px;
   }
 }

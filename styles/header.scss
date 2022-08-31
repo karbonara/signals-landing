@@ -9,6 +9,11 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  position: relative;
+  z-index: 99999;
+}
+
 .header__list {
   width: 742px;
   display: flex;
