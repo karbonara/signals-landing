@@ -84,7 +84,11 @@
 
 @media(max-width: 883px) {
   .welcome {
-    padding: 12px 0 52px 0;
+    padding: 12px 0 88px 0;
+  }
+
+  .welcome-bg {
+    display: none;
   }
 
   .welcome-ellipse {
@@ -130,9 +134,10 @@
   }
 
   .welcome__img {
+    width: auto;
     position: absolute;
-    right: 31px;
-    bottom: -118px;
+    right: 42px;
+    bottom: -170px;
     z-index: -1;
   }
 }
