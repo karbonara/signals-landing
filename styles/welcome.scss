@@ -1,0 +1,138 @@
+.welcome {
+  position: relative;
+  padding: 104px 0;
+}
+
+.welcome-ellipse {
+  position: absolute;
+  top: -618px;
+  background-size: cover;
+  width: 100%;
+  z-index: -11;
+  opacity: 0.8;
+}
+
+.welcome-bg {
+  position: absolute;
+  top: -818px;
+  right: 0;
+  background-size: cover;
+  width: 80%;
+  z-index: -111;
+  opacity: 0.5;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__title {
+  margin: 0;
+  padding-bottom: 22px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 103.02%;
+
+  span {
+    background: -webkit-linear-gradient(#0088FF, #01E0FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.welcome__intro {
+  padding-bottom: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 110.02%;
+  color: #A9A9A9;
+  width: 80%;
+}
+
+@media(max-width: 1440px) {
+  .welcome__title {
+    font-size: 78px;
+    line-height: 100%;
+  }
+
+  .welcome__intro {
+    font-size: 22px;
+    line-height: 100%;
+  }
+
+  .welcome__img {
+    width: 312px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .welcome__title {
+    font-size: 63px;
+    line-height: 100%;
+  }
+
+  .welcome__intro {
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .welcome__img {
+    width: 274px;
+  }
+}
+
+@media(max-width: 883px) {
+  .welcome {
+    padding: 12px 0 52px 0;
+  }
+
+  .welcome-ellipse {
+    top: -218px;
+  }
+
+  .welcome__title {
+    font-size: 51px;
+    text-align: center;
+  }
+
+  .welcome__intro {
+    text-align: center;
+    width: 100%;
+  }
+
+  .welcome__img {
+    position: absolute;
+    bottom: -51px;
+    right: 36px;
+    z-index: -1;
+  }
+
+  .welcome__button {
+    width: 192px !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    padding: 16px !important;
+  }
+}
+
+@media(max-width: 660px) {
+  .welcome__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .welcome__intro {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .welcome__img {
+    position: absolute;
+    right: 31px;
+    bottom: -118px;
+    z-index: -1;
+  }
+}

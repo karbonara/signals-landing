@@ -1,0 +1,118 @@
+.bonus {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 522px;
+    height: 1192px;
+    right: 0;
+    bottom: -300px;
+    background: url('https://i.imgur.com/utNavOf.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.bonus__text-intro {
+  padding: 0 172px;
+  margin-bottom: 72px;
+}
+
+.bonus__text-info {
+  width: 700px;
+  margin: 22px auto;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -53px;
+    left: -125px;
+    width: 163px;
+    height: 160px;
+    background: url("https://i.imgur.com/rbxVK3d.png");
+  }
+
+  span {
+    color: #01D1FF;
+  }
+}
+
+.bonus__text-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bonus__text-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bonus__button {
+  width: 390px;
+  padding: 19px;
+  margin: 42px auto 0 auto;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media(max-width: 1220px) {
+  .bonus__text-intro {
+    padding: 0;
+  }
+}
+
+@media(max-width: 883px) {
+  .bonus__text-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    width: auto;
+
+    &::before {
+      top: 21px;
+      left: -55px;
+    }
+  }
+
+  .bonus__text-title {
+    font-size: 34px;
+  }
+
+  .bonus__text-intro {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 528px) {
+  .bonus {
+    &::before {
+      display: none;
+    }
+  }
+
+  .bonus__button {
+    width: 248px;
+    font-size: 19px;
+    line-height: 19px;
+  }
+
+}
+
+@media(max-width: 390px) {
+  .bonus__text-info {
+    &::before {
+      left: -70px;
+      z-index: -99;
+    }
+  }
+}
