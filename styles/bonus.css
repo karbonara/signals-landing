@@ -1,17 +1,6 @@
 .bonus {
   position: relative;
 }
-.bonus::before {
-  content: "";
-  position: absolute;
-  width: 522px;
-  height: 1192px;
-  right: 0;
-  bottom: -300px;
-  background: url("https://i.imgur.com/utNavOf.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .bonus__text-intro {
   padding: 0 172px;
@@ -30,7 +19,7 @@
   left: -125px;
   width: 163px;
   height: 160px;
-  background: url("https://i.imgur.com/rbxVK3d.png");
+  background: url("../img/bonus.svg");
 }
 .bonus__text-info span {
   color: #01D1FF;
@@ -72,8 +61,7 @@
     width: auto;
   }
   .bonus__text-info::before {
-    top: 21px;
-    left: -55px;
+    display: none;
   }
   .bonus__text-title {
     font-size: 34px;
